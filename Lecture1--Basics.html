@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JavaScript BAsic Challenges: Challenge 1</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="Maria" content="SitePoint">
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+</head>
+
+<body>
+  <script>
+    var firstName='Maria';
+    var secondName='Kesa';
+
+    console.log(firstName);
+    console.log(secondName);
+    console.log(firstName+' '+secondName);
+
+    var adjective='happy!';
+    console.log(`We know that ${firstName} ${secondName} is very ${adjective}`);
+
+    //var name=prompt("What's your name?","dunno");
+    //console.log(`Hello ${name}, and welcome!`)
+
+    var number=prompt("Type a number!","")
+    if(number<10){
+      console.log("The number is small!");
+      for (var i=0; i<10; i++){
+        if(i==number){
+          console.log(`Here is a ${i} and it was the number you chose!`);
+        }
+        else {
+          console.log(`Here is a ${i}`);
+        }
+      }
+    }
+    else if(number>9) {
+      console.log("The number is large!");
+    }
+    else {
+      console.log("ERROR: you didn't enter a number!");
+    }
+  </script>
+</body>
+</html>
