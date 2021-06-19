@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JavaScript Basic Challenges: Challenge 2</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="Maria" content="SitePoint">
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+</head>
+
+<body>
+  <div>
+    <p> Here is a paragraph of text</p>
+    <p> Another paragraph</p>
+    <p> And another</p>
+  </div>
+  <button> Add another element</button>
+  <button>Turn Green Dammit!</button>
+  <script>
+    var btn=document.querySelectorAll('button');
+    var myDiv=document.querySelector('div');
+    btn[1].addEventListener('click',function(){
+      var pars=document.querySelectorAll('p');
+      for(var i=0;i<pars.length;i++){
+        pars[i].style.color='green';
+      }
+    });
+    btn[0].addEventListener('click',function(){
+      var newPar=document.createElement('p');
+      myTxt=document.createTextNode('New paragraph!');
+      newPar.appendChild(myTxt);
+      myDiv.appendChild(newPar);
+    });
+  </script>
+</body>
+</html>
